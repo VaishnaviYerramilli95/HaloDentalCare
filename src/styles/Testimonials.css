@@ -28,3 +28,22 @@
   font-size: 20px;
   margin-bottom: 15px;
 }
+
+/* MOBILE FIX */
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 60px 15px;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .review-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}

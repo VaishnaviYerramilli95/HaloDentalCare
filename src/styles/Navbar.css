@@ -1,9 +1,10 @@
 .navbar {
   height: 80px;
+  width: 100%;
+  padding: 0 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8%;
   background: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
   position: sticky;
@@ -14,21 +15,23 @@
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .logo-section img {
-  width: 55px;
+  width: 50px;
 }
 
 .logo-section h2 {
   color: #0077b6;
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0;
 }
 
 .logo-section p {
-  color: gray;
   font-size: 12px;
+  color: gray;
+  margin: 0;
 }
 
 .nav-links {
@@ -49,9 +52,71 @@
 
 .appointment-btn {
   padding: 12px 20px;
-  border: none;
   background: #0077b6;
   color: white;
   border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
   cursor: pointer;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+    height: 70px;
+  }
+
+  .logo-section img {
+    width: 40px;
+  }
+
+  .logo-section h2 {
+    font-size: 14px;
+  }
+
+  .logo-section p {
+    font-size: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+    padding: 20px 0;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
 }

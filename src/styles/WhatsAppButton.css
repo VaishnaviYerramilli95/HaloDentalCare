@@ -23,3 +23,7 @@
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+.chat-button {
+  width: 55px;
+  height: 55px;
+}
