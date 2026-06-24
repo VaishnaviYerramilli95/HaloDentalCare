@@ -1,0 +1,30 @@
+.testimonials {
+  padding: 80px 20px;
+  background: #f8fbff;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #0077cc;
+  margin-bottom: 50px;
+}
+
+.review-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.review-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
